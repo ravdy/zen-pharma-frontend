@@ -48,7 +48,7 @@ jobs:
             || echo "environment=dev" >> $GITHUB_OUTPUT
 
       - name: Checkout GitOps repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ${{ inputs.gitops-repo }}
           token: ${{ secrets.GITOPS_TOKEN }}
